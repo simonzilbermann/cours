@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <meta charset="utf-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+            <meta name="description" content="" />
+            <meta name="author" content="" />
+            <title>Register</title>
+            <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+            <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <!------ Include the above in your HEAD tag ---------->
+
+            <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+            <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="../public/css/register.css">
+
+        <!------ Include the above in your HEAD tag ---------->
+    </head>
+    <body>
+        <div class="container register">
+                <div class="row">
+                    <div class="col-md-3 register-left">
+                        <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt=""/>
+                        <h3>Welcome.</h3>
+                        <div class="container-fluid margin"><br><br>
+	                             <img src="https://cdn-icons-png.flaticon.com/512/4472/4472500.png" alt=""/>
+                        </div>
+                    </div>
+                    <div class="col-md-9 register-right">
+                        
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <h3 class="register-heading">Register</h3>
+                                <div class="row register-form">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input id="FullName" type="text" class="form-control" placeholder="Full Name *" required="required" />
+                                        </div>
+            
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input id="Email" type="email" class="form-control" placeholder="Email *" required="required" />
+                                        </div>
+                                        <div class="form-group">
+                                            <input id="Phone" type="text" minlength="10" maxlength="10" name="txtEmpPhone" class="form-control" placeholder="Phone Number *" required="required" />
+                                        </div>
+                                        <div class="form-group">
+                                        <button type="button" onclick="reg()" class="btnRegister"  value="Register">Register</button>
+                                    </div>
+                                        <div style="color: crimson;">
+                                            <h5 id="namelbl"></h5>   
+                                            <h5 id="phonelbl"></h5>   
+                                            <h5 id="emaillbl"></h5>   
+                                            <h5 id="genrallbl"></h5>  
+                                        </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="../public/js/register.js"></script>
+    </body>
+</html>
