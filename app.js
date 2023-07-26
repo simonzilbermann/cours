@@ -6,6 +6,9 @@ const mongoose = require("mongoose");
 //טעינת משתני הסביבה לתוך אובייקט במערכת
 require("dotenv").config();
 
+
+console.log(process.env.EMAIL);
+console.log(process.env.PASS);
 const UserRouter = require("./api/v1/routes/user");
 
 const path = require("path"); //מקבלת נתיב יחסי ןמחזירה נתיב אפסולותי
@@ -39,13 +42,13 @@ mongoose
 
 app.use("/user", UserRouter);
 
-// app.get("/", (req, res) => {
-//   res.render("register");
-// });
-
 app.get("/", (req, res) => {
-  res.render("home");
+  res.render("register");
 });
+
+// app.get("/", (req, res) => {
+//   res.render("home");
+// });
 //הגדרת נקודת קצה סופית עבור שגיאת 404 כתובת לא נמצאה
 app.all("*", (req, res) => {
   res.render("404");

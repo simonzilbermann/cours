@@ -1,4 +1,13 @@
-function reg() {
+
+function toggleAccordion(index) {
+  const content = document.querySelectorAll('.accordion-content')[index - 1];
+  content.style.display = content.style.display === 'none' ? 'block' : 'none';
+}
+function togglefaq(index){
+  const content = document.querySelectorAll('.faq-content')[index - 1];
+  content.style.display = content.style.display === 'none' ? 'block' : 'none';
+}
+async function reg() {
   const FullName = document.getElementById("FullName").value;
   const Email = document.getElementById("Email").value;
   const Phone = document.getElementById("Phone").value;
@@ -35,9 +44,7 @@ function reg() {
     redirect: "follow",
   };
 
-  fetch("/user/Reg", requestOptions).then((data) => {
-    if (data.msg == 1) {
-      setTimeout(() => {}, 1000);
-    }
+  await fetch("/user/Reg", requestOptions).then((data) => {
+    console.log(data);
   });
 }

@@ -9,12 +9,12 @@ module.exports = {
     let mailTransporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
-        user: process.env.USER,
+        user: process.env.EMAIL,
         pass: process.env.PASS,
       },
     });
     let mailDetails = {
-      from: process.env.USER,
+      from: process.env.EMAIL,
       to,
       subject,
       html: Body,
