@@ -11,47 +11,75 @@
         
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <link rel="stylesheet" href="../public/css/register.css">
+        <link rel="stylesheet" href="../public/css/footer.css">
 
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container">
-                <a class="navbar-brand" href="#">Full Stack Development</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#faq">שאלות נפוצות</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#course-structure">מבנה הקורס</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#myTabContent">הרשמה לקורס</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <section class="bg-light py-5">
-            <div class="container">
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <div class="d-flex align-items-center"> <!-- Use flexbox to align items vertically -->
+            <img src="../public/4472500.png" alt="" width="50px" height="50px" style="margin-right: 10px;">
+            <a class="navbar-brand" href="#" style="margin-right: 10px;">Full Stack Development</a>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item" style="margin-right: 10px;">
+                    <a class="nav-link" href="#myquestion">שאלות נפוצות</a>
+                </li>
+                <li class="nav-item" style="margin-right: 10px;">
+                    <a class="nav-link" href="#course-structure">מבנה הקורס</a>
+                </li>
+                <li class="nav-item" style="margin-right: 10px;">
+                    <a class="btn btn-primary btn-lg" href="#myTabContent">הרשמה לקורס</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+        <section class="bg-light py-5" >
+            <div class="container" style="background-image: url(../public/24.jpg); background-repeat: no-repeat; background-size: cover;">
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <h1>Full Stack Development</h1>
+                       <h1>Full Stack Development <span style="font-size: 30px;">- קורס תוכנה</span></h1>
+
                         <p class="lead">
                             קורס פיתוח תוכנה של מכללת IITC ומרכז הצעירים העירוני, במימון כמעט מלא של האגף והקרן לחיילים משוחררים, יכין אותך לתפקיד הראשון שלך בחברת הייטק, במקצוע שבו היצע המשרות הפתוחות גדול, וחברות רבות מוכנות להעסיק בו גם חסרי ניסיון.
                         </p>
                         <p class="lead">
                             הקורס כולל למידת המקצוע מהבסיס, פרקטיקה, פרויקטים, הכנה לראיונות עבודה, וכמובן עזרה במציאת עבודה וליווי אישי עד להשתלבות מלאה בתעשייה.
                         </p>
-                        <a class="btn btn-primary btn-lg" href="#form">הרשמה לקורס</a>
+                        <a class="btn btn-primary btn-lg" href="#myTabContent">הרשמה לקורס</a>
+                        <br><br>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    
+        <section class="bg-light py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2>קריירה בפיתוח תוכנה</h2>
+                        <p class="lead">
+                            Full Stack Developer הוא מפתח תוכנה אשר שולט במספר רחב של טכנולוגיות, עד כדי רמה שהוא מסוגל לפתח אפליקציה, מוצר אינטרנטי, מערכת ניהול ואף אתר שלם מקצה לקצה – מצד הלקוח (Front-End) ומצד השרת (Back-End).
+                        </p>
+                        <p class="lead">
+                            בימינו חברות הייטק רבות מגייסות מפתחי פולסטאק, וישנו ביקוש גדול למפתחים מיומנים, לכן זהו תחום מבוקש מאוד. מדובר בתפקיד מאתגר ודורש תכנון, חשיבה לוגית, סבלנות, חשיבה יצירתית ותשוקה לפתרון בעיות, יכולת ללמידה מתמשכת וראייה של התמונה הגדולה.
+                        </p>
+                        <p class="lead">
+                            המפתחים חייבים להיות בעלי יכולות תכנון ופיתוח, עליהם להכיר פלטפורמות שונות, מסדי נתונים ושפות תכנות רלוונטיות.
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
-        <div class="container register">
+        <img src="../public/26.png" style="width: 100%;" alt="">
+            <div class="container register">
             <div class="row">
                     <div class="col-md-3 register-left">
                         
@@ -96,27 +124,8 @@
             </div>
            
         </div>
-        <section class="bg-light py-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <h2>קריירה בפיתוח תוכנה</h2>
-                        <p class="lead">
-                            Full Stack Developer הוא מפתח תוכנה אשר שולט במספר רחב של טכנולוגיות, עד כדי רמה שהוא מסוגל לפתח אפליקציה, מוצר אינטרנטי, מערכת ניהול ואף אתר שלם מקצה לקצה – מצד הלקוח (Front-End) ומצד השרת (Back-End).
-                        </p>
-                        <p class="lead">
-                            בימינו חברות הייטק רבות מגייסות מפתחי פולסטאק, וישנו ביקוש גדול למפתחים מיומנים, לכן זהו תחום מבוקש מאוד. מדובר בתפקיד מאתגר ודורש תכנון, חשיבה לוגית, סבלנות, חשיבה יצירתית ותשוקה לפתרון בעיות, יכולת ללמידה מתמשכת וראייה של התמונה הגדולה.
-                        </p>
-                        <p class="lead">
-                            המפתחים חייבים להיות בעלי יכולות תכנון ופיתוח, עליהם להכיר פלטפורמות שונות, מסדי נתונים ושפות תכנות רלוונטיות.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <img src="../public/logos.png" style="width: 100%;" alt="">
-        <section class="bg-light py-5">
-        <div class="container">
+        <section class="bg-light py-5" >
+        <div class="container" style="background-image: url(../public/25.jpg); background-repeat: no-repeat; background-size: cover;">
             <div class="row">
                 <div class="col-md-12 text-center">
                     <h2>מבנה הקורס</h2>
@@ -371,7 +380,7 @@
         <div style="text-align: center;">
             <h1>שאלות נפוצות </h1>
             <h3> כל מה שרציתם לדעת על הקורס  </h3>
-            <div class="center-wrapper">
+            <div class="center-wrapper" id="myquestion">
             
                 <div class="faq">
                     <div class="faq-item">
@@ -456,22 +465,49 @@
                 </div>
             </div>
         </div>
-        <footer class="container py-4">
-            <div class="row">
-                <div class="col-md-6">
-                    <p>החילזון 3, רמת גן (מתחם הבורסה)</p>
+
+<footer class="section footer-classic context-dark bg-image" style="background: #2d3246;">
+        <div class="container">
+          <div class="row row-30">
+            <div class="col-md-4 col-xl-5">
+              <div class="pr-xl-4"><a class="brand" href="index.html"></a>
+                <p>החילזון 3, רמת גן (מתחם הבורסה)</p>
                     <p>בניין התאומים - ז'בוטינסקי 33, רמת גן</p>
                     <p>מדיניות פרטיות</p>
                     <p>תנאי שימוש</p>
                     <p>הצהרת נגישות</p>
-                </div>
-                <div class="col-md-6">
-                    <p>שעות פתיחה: 08:00-18:00</p>
-                    <p>טלפון: 077-4123211</p>
-                    <p>אימייל: info@iitc.co.il</p>
-                </div>
+                    <pclass="rights"></p>שעות פתיחה: 08:00-18:00</p>
+              </div>
             </div>
-        </footer>
+            <div class="col-md-4">
+              <h5>Contacts</h5>
+              <dl class="contact-list">
+                <dt>Address:</dt>
+                <dd>798 South Park Avenue, Jaipur, Raj</dd>
+              </dl>
+              <dl class="contact-list">
+                <dt>email:</dt>
+                <dd><a href="mailto:#">zilbermannsimon60@gmail.com</a></dd>
+              </dl>
+              <dl class="contact-list">
+                <dt>phones:</dt>
+                <dd><a href="tel:#">077-4123211</a> <span>or</span> <a href="tel:#">0552212590</a>
+                </dd>
+              </dl>
+            </div>
+            <div class="col-md-4 col-xl-3">
+              <h5>Links</h5>
+              <ul class="nav-list">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">Pricing</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
         <script src="../public/js/register.js"></script>
     </body>
 </html>
